@@ -15,9 +15,10 @@ class UhomeController extends Controller
      */
     public function index()
     {
-        $data = Blog::all();
-        $products = Product::limit(5)->get();
-        return view('users.home',['blog' => $data, 'products' => $products]);
+        // $data = Blog::all();
+        // $products = Product::limit(5)->get();
+        // return view('users.home',['blog' => $data, 'products' => $products]);
+        return view('users.home');
     }
 
     /**

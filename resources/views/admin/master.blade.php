@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="images/favicon.ico" type="image/ico" />
 
-    <title> Zahra Farm </title>
+    <title> Profile </title>
     <link href="{{url('assets/vendors/bootstrap/dist/css/bootstrap.css')}}" rel="stylesheet" />
     <!-- Bootstrap -->
     <link href={{url('assets/vendors/bootstrap/dist/css/bootstrap.min.css')}} rel="stylesheet">
@@ -38,7 +38,7 @@
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Zahra Farms</span></a>
+              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Compy Profile</span></a>
             </div>
 
             <div class="clearfix"></div>
@@ -63,9 +63,13 @@
                 <h3>General</h3>
                 <ul class="nav side-menu">
                   <li><a href="/A_home"><i class="fa fa-home"></i>Home </a></li>
-                  <li><a href="/Blog"><i class="fa fa-table"></i>Blog </a></li>
-                  <li><a href="/A_product"><i class="fa fa-table"></i>Product </a></li>
-                  <li><a href="/list_order"><i class="fa fa-table"></i>Order </a></li>
+                  <li><a href="/Blog"><i class="fa fa-newspaper-o"></i>Blog </a></li>
+                  <li><a href="/A_dosen"><i class="fa fa-users"></i>Dosen </a></li>
+                  <li><a href="/A_download"><i class="fa fa-cloud-download"></i>Download </a></li>
+                  <li><a href="/A_jabatan"><i class="fa fa-sitemap"></i>Jabatan </a></li>
+                  <li><a href="/A_pimpinan"><i class="fa fa-user"></i>Pimpinan </a></li>
+                  <li><a href="/A_video"><i class="fa fa-file-video-o"></i>Video </a></li>
+                  <li><a href="/list_order"><i class="fa fa-table"></i>User </a></li>
                 </ul>
               </div>
 

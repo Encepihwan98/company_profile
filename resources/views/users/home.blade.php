@@ -1,183 +1,167 @@
 @extends('users.master')
 
-@section('subheader')
-<!-- Breadcrumb Section Begin -->
-<div class="breacrumb-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="breadcrumb-text">
-                    <a href="#"><i class="fa fa-home"></i> Home</a>
-                    <!-- <span>Blog</span> -->
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Breadcrumb Section Begin -->
-@endsection
-
 @section('content')
-<!-- Hero Section Begin -->
-<section class="hero-section">
-    <div class="hero-items owl-carousel">
-        <div class="single-hero-items set-bg" data-setbg="{{url('theme/img/slide-1.jpg')}}">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5">
-                        <span>Kambing Berkualitas</span>
-                        <h1>Budidaya Kambing</h1>
-                        <p>Zahrah Farm memiliki produk unggulan diantara nya
-                            Pembibitan Kambing, Penggemukan Kambing, Kambing Potong
-                            dan Susu Kefir
-                        </p>
-                        <a href="#" class="primary-btn">Order Sekarang</a>
-                    </div>
-                </div>
-                <!-- <div class="off-card">
-                    <h2>Sale <span>50%</span></h2>
-                </div> -->
-            </div>
-        </div>
-        <div class="single-hero-items set-bg" data-setbg="{{url('theme/img/slide-2.jpg')}}">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5">
-                        <span>Susu Kambing</span>
-                        <h1>Susu Kefir</h1>
-                        <p>Susu kambing segar zahrah Farms, mengandung berbagai vitamin dan mineral, kefir juga mengandung
-sedikit vitamin D. Tidak hanya itu, minuman ini juga dilengkapi probiotik yang
-menyehatkan sistem pencernaan</p>
-                        <a href="#" class="primary-btn">Order Sekarang</a>
-                    </div>
-                </div>
-                <div class="off-card">
-                    <h2> Nutrisi <span>Tinggi</span></h2>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Hero Section End -->
+<section id="hero">
+  <div class="hero-container">
+    <h1>Easy start with Vlava</h1>
+    <h2>We are team of talented designers making websites with Bootstrap</h2>
+    <a href="#about" class="btn-get-started scrollto">Get Started</a>
+  </div>
+</section><!-- End Hero -->
 
-<!-- Banner Section Begin -->
-<div class="banner-section spad">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-3">
-                <div class="single-banner">
-                    <img src="{{url('theme/img/banner-1.jpg')}}" alt="">
-                    <div class="inner-text">
-                        <h6>Penggemukan</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="single-banner">
-                    <img src="{{url('theme/img/banner-2.jpg')}}" alt="">
-                    <div class="inner-text">
-                        <h6>Pembibitan</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="single-banner">
-                    <img src="{{url('theme/img/banner-3.jpg')}}" alt="">
-                    <div class="inner-text">
-                        <h6>Kambing Potong</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="single-banner">
-                    <img src="{{url('theme/img/banner-4.jpg')}}" alt="">
-                    <div class="inner-text">
-                        <h6>Susu Kefir</h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Banner Section End -->
+<main id="main">
 
-<!-- Man Banner Section Begin -->
-<section class="man-banner spad">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="product-slider owl-carousel">
-                    {{-- @dd($products) --}}
-                    @foreach ($products as $product)
-                        <div class="product-item">
-                            <div class="pi-pic">
-                                <img height="500px" src="{{url('data_file/'.$product->foto)}}" alt="">
-                                <div class="sale">Sale</div>
-                                <div class="icon">
-                                    <i class="icon_heart_alt"></i>
-                                </div>
-                                <ul>
-                                    <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                    <li class="quick-view"><a href="/Order">+ Order</a></li>
-                                    <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="pi-text">
-                                <div class="catagory-name">Zahra Farms</div>
-                                <a href="#">
-                                    <h5>{{ $product->nama_produk }}</h5>
-                                </a>
-                                <div class="product-price">
-                                    {{ 'Rp. '.$product->harga }}
-                                    {{-- <span>$35.00</span> --}}
-                                </div>
-                            </div>
-                        </div>
-                    @endforeach
-                </div>
+  <!-- ======= Blog Section ======= -->
+  <section id="blog" class="blog">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row">
+
+        <div class="col-lg-8 entries">
+
+          <article class="entry">
+
+            <div class="entry-img">
+              <img src="{{url('theme/img/blog/blog-1.jpg')}}" alt="" class="img-fluid">
             </div>
 
-        </div>
-    </div>
-</section>
-<!-- Man Banner Section End -->
+            <h2 class="entry-title">
+              <a href="blog-single.html">Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia</a>
+            </h2>
 
-<!-- Latest Blog Section Begin -->
-<section class="latest-blog spad">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section-title">
-                    <h2>Artikel</h2>
-                </div>
+            <div class="entry-meta">
+              <ul>
+                <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="blog-single.html">John Doe</a></li>
+                <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-single.html"><time datetime="2020-01-01">Jan 1, 2020</time></a></li>
+                <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="blog-single.html">12 Comments</a></li>
+              </ul>
             </div>
-        </div>
-        <div class="row">
-            @foreach($blog as $data)
-            <div class="col-lg-4 col-md-6">
-                <div class="single-latest-blog">
-                    <img src="{{url('/data_file/'.$data->foto)}}" alt="">
-                    <div class="latest-text">
-                        <div class="tag-list">
-                            <div class="tag-item">
-                                <i class="fa fa-calendar-o"></i>
-                                May 4,2019
-                            </div>
-                            <div class="tag-item">
-                                <i class="fa fa-comment-o"></i>
-                                5
-                            </div>
-                        </div>
-                        <a href="#">
-                            <h4>{{$data->judul}}</h4>
-                        </a>
-                        <p>{{ \Illuminate\Support\Str::limit($data->isi, 70, '....')}}</p>
+
+            <div class="entry-content">
+              <p>
+                Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta.
+                Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta. Est cum et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda perferendis dolore.
+              </p>
+              <div class="read-more">
+                <a href="blog-single.html">Read More</a>
+              </div>
+            </div>
+
+          </article><!-- End blog entry -->
+
+          <article class="entry">
+
+            <div class="entry-img">
+              <img src="{{url('theme/img/blog/blog-2.jpg')}}" alt="" class="img-fluid">
+            </div>
+
+            <h2 class="entry-title">
+              <a href="blog-single.html">Nisi magni odit consequatur autem nulla dolorem</a>
+            </h2>
+
+            <div class="entry-meta">
+              <ul>
+                <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="blog-single.html">John Doe</a></li>
+                <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-single.html"><time datetime="2020-01-01">Jan 1, 2020</time></a></li>
+                <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="blog-single.html">12 Comments</a></li>
+              </ul>
+            </div>
+
+            <div class="entry-content">
+              <p>
+                Incidunt voluptate sit temporibus aperiam. Quia vitae aut sint ullam quis illum voluptatum et. Quo libero rerum voluptatem pariatur nam.
+                Ad impedit qui officiis est in non aliquid veniam laborum. Id ipsum qui aut. Sit aliquam et quia molestias laboriosam. Tempora nam odit omnis eum corrupti qui aliquid excepturi molestiae. Facilis et sint quos sed voluptas. Maxime sed tempore enim omnis non alias odio quos distinctio.
+              </p>
+              <div class="read-more">
+                <a href="blog-single.html">Read More</a>
+              </div>
+            </div>
+
+          </article><!-- End blog entry -->
+
+          <article class="entry">
+
+            <div class="entry-img">
+              <img src="{{url('theme/img/blog/blog-3.jpg')}}" alt="" class="img-fluid">
+            </div>
+
+            <h2 class="entry-title">
+              <a href="blog-single.html">Possimus soluta ut id suscipit ea ut. In quo quia et soluta libero sit sint.</a>
+            </h2>
+
+            <div class="entry-meta">
+              <ul>
+                <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="blog-single.html">John Doe</a></li>
+                <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-single.html"><time datetime="2020-01-01">Jan 1, 2020</time></a></li>
+                <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="blog-single.html">12 Comments</a></li>
+              </ul>
+            </div>
+
+            <div class="entry-content">
+              <p>
+                Aut iste neque ut illum qui perspiciatis similique recusandae non. Fugit autem dolorem labore omnis et. Eum temporibus fugiat voluptate enim tenetur sunt omnis.
+                Doloremque est saepe laborum aut. Ipsa cupiditate ex harum at recusandae nesciunt. Ut dolores velit.
+              </p>
+              <div class="read-more">
+                <a href="blog-single.html">Read More</a>
+              </div>
+            </div>
+
+          </article><!-- End blog entry -->
+
+
+          <div class="blog-pagination">
+            <ul class="justify-content-center">
+              <li><a href="#">1</a></li>
+              <li class="active"><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+            </ul>
+          </div>
+
+        </div><!-- End blog entries list -->
+
+        <div class="col-lg-4">
+
+          <div class="sidebar">
+
+            <h3 class="sidebar-title">Search</h3>
+            <div class="sidebar-item search-form">
+              <form action="">
+                <input type="text">
+                <button type="submit"><i class="bi bi-search"></i></button>
+              </form>
+            </div><!-- End sidebar search formn-->
+
+            <h3 class="sidebar-title">Video</h3>
+            <div class="sidebar-item categories">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="card-body">
+                    <div class="embed">
+                      <iframe class="embed-responsive-item" src="//www.youtube.com/embed/zpOULjyy-n8" allowfullscreen></iframe>
                     </div>
+                    <h4>Judul Video</h4>
+                  </div>
                 </div>
+
+                <div class="col-lg-12">
+                  <div class="card-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="//www.youtube.com/embed/zpOULjyy-n8" allowfullscreen></iframe>
+                    </div>
+                    <h4>Judul Video</h4>
+                  </div>
+                </div>
+                <!-- End sidebar categories-->
+              </div>
+              <!-- End sidebar -->
+
             </div>
-            @endforeach
+            <!-- End blog sidebar -->
+
+          </div>
+
         </div>
-    </div>
-</section>
-<!-- Latest Blog Section End -->
-@endsection
+  </section>
+  <!-- End Blog Section -->
+  @endsection

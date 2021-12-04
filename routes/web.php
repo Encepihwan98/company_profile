@@ -39,27 +39,43 @@ Route::get('/delete/{id}','BlogController@destroy');
 Route::get('/list_order','OrderController@index');
 Route::post('/order/create','UserOrderController@store');
 
-Route::get('/A_product','ProductController@index');
-Route::get('/A_product/create','ProductController@create');
-Route::post('/A_product/save','ProductController@store');
-Route::get('/A_product/edit/{id}','ProductController@edit');
-Route::post('/A_product/update/{id}','ProductController@update');
-Route::get('/A_product/delete/{id}','ProductController@destroy');
+// Route::get('/A_product','ProductController@index');
+// Route::get('/A_product/create','ProductController@create');
+// Route::post('/A_product/save','ProductController@store');
+// Route::get('/A_product/edit/{id}','ProductController@edit');
+// Route::post('/A_product/update/{id}','ProductController@update');
+// Route::get('/A_product/delete/{id}','ProductController@destroy');
 
+// ======= dosen =======
+Route::get('/A_dosen','DosenController@index');
+Route::get('/A_dosen/create','DosenController@create');
 
+// ======= download =======
+Route::get('/A_download','DownloadController@index');
+Route::get('/A_download/create','DownloadController@create');
 
+// ======= jabatan =======
+Route::get('/A_jabatan','JabatanController@index');
+Route::get('/A_jabatan/create','JabatanController@create');
 
+// ======= pimpinan =======
+Route::get('/A_pimpinan','PimpinanController@index');
+Route::get('/A_pimpinan/create','PimpinanController@create');
+
+// ======= video =======
+Route::get('/A_video','VideoController@index');
+Route::get('/A_video/create','VideoController@create');
 
 // user user
-Route::get('/Produk','UserProductController@index');
+Route::get('/tenaga-pengajar','UprofileController@TenagaPengajar');
 
 Route::get('/Artikel','UserArtikelController@index');
 Route::get('/readmore/{id}/','UserArtikelController@readmore');
 
-Route::get('/Kontak','UserContactController@index');
-Route::get('/Order','UserOrderController@index');
-Route::get('/Home','UhomeController@index');
+Route::get('/kontak','UcontactController@index');
+Route::get('/galery','UgaleryController@index');
 
+Route::get('/Home','UhomeController@index');
 
 Route::get('/localStorage', function(){
     Storage::disk('local')->put('example.txt', 'this is content');

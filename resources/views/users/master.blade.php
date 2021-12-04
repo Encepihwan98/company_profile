@@ -1,196 +1,137 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Fashi Template">
-    <meta name="keywords" content="Fashi, unica, creative, html">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Zahra Farms</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+  <title>Vlava Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-    <!-- Css Styles -->
-    <link rel="stylesheet" href="{{url('theme/css/bootstrap.min.css')}}" type="text/css">
-    <link rel="stylesheet" href="{{url('theme/css/font-awesome.min.css')}}" type="text/css">
-    <link rel="stylesheet" href="{{url('theme/css/themify-icons.css')}}" type="text/css">
-    <link rel="stylesheet" href="{{url('theme/css/elegant-icons.css')}}" type="text/css">
-    <link rel="stylesheet" href="{{url('theme/css/owl.carousel.min.css')}}" type="text/css">
-    <link rel="stylesheet" href="{{url('theme/css/nice-select.css')}}" type="text/css">
-    <link rel="stylesheet" href="{{url('theme/css/jquery-ui.min.css')}}" type="text/css">
-    <link rel="stylesheet" href="{{url('theme/css/slicknav.min.css')}}" type="text/css">
-    <link rel="stylesheet" href="{{url('theme/css/style.css')}}" type="text/css">
-    @yield('style')
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{{url('theme/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{url('theme/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
+  <link href="{{url('theme/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
+  <link href="{{url('theme/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
+  <link href="{{url('theme/vendor/remixicon/remixicon.css')}}" rel="stylesheet">
+  <link href="{{url('theme/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{{url('theme/css/style.css')}}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Vlava - v4.6.0
+  * Template URL: https://bootstrapmade.com/vlava-free-bootstrap-one-page-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
 <body>
-    <!-- Page Preloder -->
-    <!-- <div id="preloder">
-        <div class="loader"></div>
-    </div> -->
 
-    <!-- Header Section Begin -->
-    <header class="header-section">
-        <div class="header-top">
-            <div class="container">
-                <div class="ht-left">
-                    <div class="mail-service">
-                        <i class=" fa fa-envelope"></i>
-                        zahrahfarmbdg@gmail.com
-                    </div>
-                    <div class="phone-service">
-                        <i class=" fa fa-phone"></i>
-                        0887-2424-584
-                    </div>
-                </div>
-                <div class="ht-right">
-                    <a href="/login" class="login-panel"><i class="fa fa-user"></i>Login</a>
-                    <div class="lan-selector">
-                        <select class="language_drop" name="countries" id="countries" style="width:300px;">
-                            <option value='yt' data-image="{{url('theme/img/flag-1.jpg')}}" data-imagecss="flag yt"
-                                data-title="English">English</option>
-                            <option value='yu' data-image="{{url('theme/img/flag-2.jpg')}}" data-imagecss="flag yu"
-                                data-title="Bangladesh">German </option>
-                        </select>
-                    </div>
-                    <div class="top-social">
-                        <a href="#"><i class="ti-facebook"></i></a>
-                        <a href="#"><i class="ti-twitter-alt"></i></a>
-                        <a href="#"><i class="ti-linkedin"></i></a>
-                        <a href="#"><i class="ti-pinterest"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="inner-header">
-                <div class="row">
-                    <div class="col-lg-2 col-md-2">
-                        <div class="logo">
-                            <a href="./index.html">
-                                <img src="{{url('theme/img/zahrah.png')}}" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-7 col-md-7">
-                        <div class="advanced-search">
-                            <button type="button" class="category-btn">All Categories</button>
-                            <div class="input-group">
-                                <input type="text" placeholder="What do you need?">
-                                <button type="button"><i class="ti-search"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 text-right col-md-3">
-                        <ul class="nav-right">
-                            <li class="heart-icon">
-                                <a href="#">
-                                    <i class="icon_heart_alt"></i>
-                                    <span>0</span>
-                                </a>
-                            </li>
-                            <li class="cart-icon">
-                                <a href="#">
-                                    <i class="icon_bag_alt"></i>
-                                    <span>0</span>
-                                </a>
-                            </li>
-                            <!-- <li class="cart-price">$150.00</li> -->
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="nav-item">
-            <div class="container">
-                <div class="nav-depart">
-                </div>
-                <nav class="nav-menu mobile-menu">
-                    <ul>
-                        <li><a href="/Home">Home</a></li>
-                        <li><a href="/Produk">Produk</a></li>
-                        <li><a href="/Artikel">Artikel</a></li>
-                        <li><a href="/Order">Order</a></li>
-                        <li><a href="/Kontak">Kontak</a></li>
-                    </ul>
-                </nav>
-                <div id="mobile-menu-wrap"></div>
-            </div>
-        </div>
-    </header>
-    <!-- Header End -->
-    <main>
-    @yield('subheader')  
-    @yield('content')
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex align-items-center justify-content-between">
 
-    </main>
-    <!-- Footer Section Begin -->
-    <footer class="footer-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="footer-left">
-                        <div class="footer-logo">
-                            <a href="#"><img src="{{url('theme/img/zahrahfarm.png')}}" alt=""></a>
-                        </div>
-                        <ul>
-                            <li>Kp. Kangkareng Desa Cikoneng</li>
-                            <li>Kecamatan Ciparay</li>
-                            <li>Kabupaten Bandung</li>
-                            <li>Phone : 0887-2424-584 </li>
-                            <li>Email : zahrahfarmbdg@gmail.com</li>
-                        </ul>
-                        <div class="footer-social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-pinterest"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 offset-lg-1">
-                    <div class="footer-widget">
-                        <h5>Information</h5>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Product</a></li>
-                            <li><a href="#">Artikel</a></li>
-                            <li><a href="#">Kontak</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copyright-reserved">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="copyright-text">
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Footer Section End -->
+      <div class="logo">
+        <h1><a href="index.html">Vlava</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
 
-    <!-- Js Plugins -->
-    <script src="{{url('theme/js/jquery-3.3.1.min.js')}}"></script>
-    <script src="{{url('theme/js/bootstrap.min.js')}}"></script>
-    <script src="{{url('theme/js/jquery-ui.min.js')}}"></script>
-    <script src="{{url('theme/js/jquery.countdown.min.js')}}"></script>
-    <script src="{{url('theme/js/jquery.nice-select.min.js')}}"></script>
-    <script src="{{url('theme/js/jquery.zoom.min.js')}}"></script>
-    <script src="{{url('theme/js/jquery.dd.min.js')}}"></script>
-    <script src="{{url('theme/js/jquery.slicknav.js')}}"></script>
-    <script src="{{url('theme/js/owl.carousel.min.js')}}"></script>
-    <script src="{{url('theme/js/main.js')}}"></script>
-    @yield('js')
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="/Home">Beranda</a></li>
+          <li class="dropdown"><a href="#"><span>Profile</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Visi Misi</a></li>
+              <li><a href="#">Struktur Organisasi</a></li>
+              <li><a href="/tenaga-pengajar">Tenaga Pengajar</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#about">HIMA</a></li>
+          <li><a class="nav-link scrollto" href="/galery">Galery</a></li>
+          <li><a class="nav-link scrollto" href="/kontak">Contact</a></li>
+          <li><a class="nav-link scrollto" href="/login">Login</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+    
+    @yield("content")
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+
+      <div class="container">
+
+        <div class="row  justify-content-center">
+          <div class="col-lg-6">
+            <h3>Vlava</h3>
+            <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+          </div>
+        </div>
+
+        <div class="row footer-newsletter justify-content-center">
+          <div class="col-lg-6">
+            <form action="" method="post">
+              <input type="email" name="email" placeholder="Enter your Email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Vlava</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/vlava-free-bootstrap-one-page-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{{url('theme/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <!-- <script src=`{{url("theme/js/jquery-3.3.1.min.js")}}`></script> -->
+  <script src="{{url('theme/vendor/glightbox/js/glightbox.min.js')}}"></script>
+  <script src="{{url('theme/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+  <script src="{{url('theme/vendor/php-email-form/validate.js')}}"></script>
+  <script src="{{url('theme/vendor/swiper/swiper-bundle.min.js')}}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{{url('theme/js/main.js')}}"></script>
+
 </body>
 
 </html>
